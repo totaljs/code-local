@@ -9,3 +9,4 @@ __Instructions__:
 - clone this project
 - edit `docker-compose.yaml`
 - run `docker compose up -d`
+- open code `http://code.localhost`
