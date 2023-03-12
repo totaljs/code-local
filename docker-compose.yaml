@@ -16,13 +16,13 @@ services:
     image: totalplatform/code
     volumes:
       - codedata:/databases
-      - /Volumes/Development/www:/www/www     # Edit development folder
+      - /your/local/path/apps/:/www/www     # Edit development folder
       - /var/run/docker.sock:/var/run/docker.sock:ro
     environment:
     - VIRTUAL_HOST=code.localhost
     - VIRTUAL_PORT=8000
-    - FOLDER_WWW=/Volumes/Development/www     # Edit development folder
-    - FOLDER_NPM=/Volumes/Development/node_modules     # Edit node_modules folder
+    - FOLDER_WWW=/your/local/path/apps     # Edit development folder
+    - FOLDER_NPM=/your/local/path/node_modules     # Edit node_modules folder
 
 volumes:
   codedata:
