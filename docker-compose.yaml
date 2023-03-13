@@ -24,6 +24,7 @@ services:
       - VIRTUAL_MAX_UPLOAD=100
       - VIRTUAL_HOST=code.localhost
       - VIRTUAL_PORT=8000
+      - DISABLE_ACCESS_LOGS=1
 
 volumes:
   codedata:

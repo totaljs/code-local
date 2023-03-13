@@ -10,3 +10,8 @@ __Instructions__:
 - edit `docker-compose.yaml`
 - run `docker compose up -d`
 - open code `http://code.localhost`
+
+__Adding apps__:
+
+- open Projects section
+- add new app with the url: `http://yourapp.localhost` (you must keep `.localhost` suffix)
