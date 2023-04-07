@@ -15,7 +15,7 @@ services:
     container_name: code
     image: totalplatform/code
     volumes:
-      - codedata:/databases
+      - codedata:/code/databases
       - /var/run/docker.sock:/var/run/docker.sock:ro
       - /your/local/path/apps/:/www/www              # Edit development folder
     environment:
