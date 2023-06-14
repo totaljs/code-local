@@ -10,6 +10,7 @@ services:
     restart: always
     volumes:
       - /var/run/docker.sock:/tmp/docker.sock:ro
+      - ./nginx:/etc/nginx/conf.d
 
   code:
     container_name: code
