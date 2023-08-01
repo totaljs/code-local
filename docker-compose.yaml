@@ -20,6 +20,8 @@ services:
       - /var/run/docker.sock:/var/run/docker.sock:ro
       - /your/local/path/apps/:/www/www              # Edit development folder
     environment:
+      - UID=code
+      - ORIGIN=http://{0}.localhost
       - FOLDER_WWW=/your/local/path/apps             # Edit development folder
       - FOLDER_NPM=/your/local/path/node_modules     # Edit node_modules folder
       - VIRTUAL_MAX_UPLOAD=100
